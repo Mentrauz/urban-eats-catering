@@ -176,7 +176,7 @@ export default function AboutPage() {
                 />
               </div>
               <h3 className="text-xl font-bold text-gray-800 mb-2">Jayanth Shetty</h3>
-              <p className="text-gray-600 font-medium mb-1">Marketing Manager</p>
+              <p className="text-gray-600 font-medium mb-1">Managing director</p>
               <p className="text-secondary">+91 6360049746</p>
             </motion.div>
 
