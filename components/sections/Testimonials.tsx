@@ -5,24 +5,24 @@ import Image from 'next/image';
 
 export const testimonials = [
   {
-    name: 'Sarah & James',
+    name: 'Harshvardhan',
     role: 'Wedding Clients',
-    image: 'https://images.unsplash.com/photo-1494790108377-be9c29b29330',
-    blurDataURL: 'data:image/jpeg;base64,...',
+    image: 'https://api.dicebear.com/6.x/initials/svg?seed=HV&backgroundColor=b6e3f4',
+    blurDataURL: 'data:image/svg+xml;base64,...',
     quote: 'The attention to detail and personalized service exceeded our expectations. Our wedding guests are still talking about the amazing food!'
   },
   {
-    name: 'Michael Chen',
+    name: 'Arvind Kumar',
     role: 'Corporate Event Manager',
-    image: 'https://images.unsplash.com/photo-1472099645785-5658abf4ff4e',
-    blurDataURL: 'data:image/jpeg;base64,...',
+    image: 'https://api.dicebear.com/6.x/initials/svg?seed=AK&backgroundColor=d1d4f9',
+    blurDataURL: 'data:image/svg+xml;base64,...',
     quote: 'Professional, punctual, and absolutely delicious. Chowdeshwari Catering has been our go-to for all corporate events.'
   },
   {
-    name: 'Emily Rodriguez',
+    name: 'Rajesh Shah',
     role: 'Private Party Host',
-    image: 'https://images.unsplash.com/photo-1438761681033-6461ffad8d80',
-    blurDataURL: 'data:image/jpeg;base64,...',
+    image: 'https://api.dicebear.com/6.x/initials/svg?seed=RS&backgroundColor=c0aede',
+    blurDataURL: 'data:image/svg+xml;base64,...',
     quote: "From planning to execution, everything was flawless. The chef's creativity and presentation were outstanding."
   }
 ] as const;
