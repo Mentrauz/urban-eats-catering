@@ -12,8 +12,8 @@ export default function CorporateMenu() {
     },
     {
       icon: <FaUtensils className="w-8 h-8" />,
-      title: "Gourmet Menus",
-      description: "Exquisite dishes crafted by our top chefs."
+      title: "Daily Servings",
+      description: "We provide daily servings to our clients."
     },
     {
       icon: <FaHandshake className="w-8 h-8" />,
@@ -22,10 +22,23 @@ export default function CorporateMenu() {
     },
     {
       icon: <FaChartLine className="w-8 h-8" />,
-      title: "Event Planning",
-      description: "Comprehensive planning for successful events."
+      title: "Event Catering",
+      description: "We provide catering services for events."
     }
   ];
+
+  const cuisineOptions = [
+    "South Indian",
+    "North Indian",
+    "Italian",
+    "Chinese",
+    "Live food counter",
+    "Chats",
+    "Juice",
+    "Etc"
+  ];
+
+  const dessertOptions = ["Brownies", "Muffins", "Chocolates"];
 
   return (
     <div className="min-h-screen bg-white">
@@ -81,6 +94,87 @@ export default function CorporateMenu() {
         </div>
       </section>
 
+      {/* Cuisine Options Section */}
+      <section className="py-20 bg-white">
+        <div className="container mx-auto px-4">
+          <motion.h2
+            initial={{ opacity: 0, y: 20 }}
+            animate={{ opacity: 1, y: 0 }}
+            className="text-3xl md:text-4xl font-bold text-center mb-16"
+          >
+            Our Cuisine Options
+          </motion.h2>
+          
+          <div className="grid grid-cols-1 md:grid-cols-2 gap-12">
+            <motion.div
+              initial={{ opacity: 0, y: 20 }}
+              animate={{ opacity: 1, y: 0 }}
+              className="bg-gray-50 p-8 rounded-xl shadow-sm"
+            >
+              <h3 className="text-2xl font-semibold mb-6 text-secondary">Main Cuisines</h3>
+              <ul className="space-y-3">
+                {cuisineOptions.map((cuisine, index) => (
+                  <motion.li 
+                    key={cuisine}
+                    initial={{ opacity: 0, x: -20 }}
+                    animate={{ opacity: 1, x: 0 }}
+                    transition={{ delay: index * 0.1 }}
+                    className="flex items-center"
+                  >
+                    <span className="w-2 h-2 bg-secondary rounded-full mr-3"></span>
+                    <span className="text-lg text-gray-700">{cuisine}</span>
+                  </motion.li>
+                ))}
+              </ul>
+            </motion.div>
+            
+            <motion.div
+              initial={{ opacity: 0, y: 20 }}
+              animate={{ opacity: 1, y: 0 }}
+              transition={{ delay: 0.2 }}
+              className="bg-gray-50 p-8 rounded-xl shadow-sm"
+            >
+              <h3 className="text-2xl font-semibold mb-6 text-secondary">Desserts & Snacks</h3>
+              <p className="text-gray-600 mb-4">Complement your menu with our delicious desserts and snacks:</p>
+              <ul className="space-y-3">
+                {dessertOptions.map((dessert, index) => (
+                  <motion.li 
+                    key={dessert}
+                    initial={{ opacity: 0, x: -20 }}
+                    animate={{ opacity: 1, x: 0 }}
+                    transition={{ delay: 0.3 + (index * 0.1) }}
+                    className="flex items-center"
+                  >
+                    <span className="w-2 h-2 bg-secondary rounded-full mr-3"></span>
+                    <span className="text-lg text-gray-700">{dessert}</span>
+                  </motion.li>
+                ))}
+                <motion.li 
+                  initial={{ opacity: 0, x: -20 }}
+                  animate={{ opacity: 1, x: 0 }}
+                  transition={{ delay: 0.6 }}
+                  className="flex items-center"
+                >
+                  <span className="w-2 h-2 bg-secondary rounded-full mr-3"></span>
+                  <span className="text-lg text-gray-700">And more...</span>
+                </motion.li>
+              </ul>
+            </motion.div>
+          </div>
+          
+          <motion.div
+            initial={{ opacity: 0, y: 20 }}
+            animate={{ opacity: 1, y: 0 }}
+            transition={{ delay: 0.4 }}
+            className="mt-12 text-center"
+          >
+            <p className="text-gray-600 text-lg">
+              Customize your menu with any combination of our cuisine options to perfectly suit your event.
+            </p>
+          </motion.div>
+        </div>
+      </section>
+
       {/* Testimonials Section */}
       <section className="py-20 bg-gray-50">
         <div className="container mx-auto px-4">
@@ -94,11 +188,11 @@ export default function CorporateMenu() {
           <div className="grid grid-cols-1 md:grid-cols-2 gap-12">
             {[
               {
-                name: "John Doe",
+                name: "Arvind Kumar",
                 feedback: "The catering service was exceptional and made our event a success!"
               },
               {
-                name: "Jane Smith",
+                name: "Rajesh Shah",
                 feedback: "Professional staff and delicious food. Highly recommend!"
               }
             ].map((testimonial, index) => (
@@ -136,7 +230,7 @@ export default function CorporateMenu() {
             Contact us today to discuss your corporate catering needs.
           </motion.p>
           <motion.a
-            href="https://wa.me/990011223"
+            href="https://wa.me/9876543210"
             target="_blank"
             rel="noopener noreferrer"
             initial={{ opacity: 0, y: 20 }}
@@ -145,7 +239,7 @@ export default function CorporateMenu() {
             className="bg-white text-secondary px-8 py-3 rounded-full font-semibold hover:bg-gray-100 transition-colors inline-flex items-center"
           >
             Contact Us
-            <span className="ml-2">(990011223)</span>
+            <span className="ml-2">(9876543210)</span>
           </motion.a>
         </div>
       </section>

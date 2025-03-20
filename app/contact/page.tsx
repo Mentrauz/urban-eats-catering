@@ -108,6 +108,7 @@ export default function ContactPage() {
                     <div>
                       <h3 className="font-semibold mb-1">Address</h3>
                       <p className="text-gray-600">
+                      5th cross Raghavendra layout<br />
                       Bangalore, Karnataka 560068
                       </p>
                     </div>
@@ -116,14 +117,14 @@ export default function ContactPage() {
                     <Phone className="w-6 h-6 text-secondary mr-4" />
                     <div>
                       <h3 className="font-semibold mb-1">Phone</h3>
-                      <p className="text-gray-600">+91 990011223</p>
+                      <p className="text-gray-600">+91 9876543210</p>
                     </div>
                   </div>
                   <div className="flex items-start">
                     <Mail className="w-6 h-6 text-secondary mr-4" />
                     <div>
                       <h3 className="font-semibold mb-1">Email</h3>
-                      <p className="text-gray-600">info@Urban-Eats.com</p>
+                      <p className="text-gray-600">info@chowdeshwari.com</p>
                     </div>
                   </div>
                   <div className="flex items-start">

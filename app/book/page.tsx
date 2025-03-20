@@ -42,7 +42,7 @@ export default function BookPage() {
     `.trim();
     
     // Create WhatsApp URL with phone number and message
-    const whatsappUrl = `https://wa.me/91990011223?text=${encodeURIComponent(message)}`;
+    const whatsappUrl = `https://wa.me/919876543210?text=${encodeURIComponent(message)}`;
     
     // Open WhatsApp in a new tab
     window.open(whatsappUrl, '_blank');

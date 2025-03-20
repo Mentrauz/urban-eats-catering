@@ -47,7 +47,7 @@ export default function Header() {
             href="/" 
             className="text-xl lg:text-2xl font-playfair font-bold"
           >
-            Urban-Eats Catering Services
+            Chowdeshwari Catering Services
           </Link>
 
           {/* Desktop Navigation */}

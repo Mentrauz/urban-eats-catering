@@ -7,7 +7,7 @@ export default function Footer() {
       <div className="container mx-auto px-4 py-12">
         <div className="grid grid-cols-1 md:grid-cols-4 gap-8">
           <div>
-            <h3 className="text-xl font-bold mb-4">Urban-Eats Catering</h3>
+            <h3 className="text-xl font-bold mb-4">Chowdeshwari Catering</h3>
             <p className="text-sm text-gray-300">
               Crafting unforgettable culinary experiences for life's most precious moments.
             </p>
@@ -26,10 +26,10 @@ export default function Footer() {
           <div>
             <h4 className="text-lg font-semibold mb-4">Contact Info</h4>
             <ul className="space-y-2 text-sm">
-              
+              <li>5th cross Raghavendra layoutt</li>
               <li>Bangalore, Karnataka 560068</li>
-              <li>Tel: +91 990011223</li>
-              <li>Email: info@Urban-Eats.com</li>
+              <li>Tel: +91 9876543210</li>
+              <li>Email: info@chowdeshwari.com</li>
             </ul>
           </div>
           
@@ -50,7 +50,7 @@ export default function Footer() {
         </div>
         
         <div className="border-t border-gray-800 mt-8 pt-8 text-center text-sm">
-          <p>&copy; {new Date().getFullYear()} Urban-Eats Catering. All rights reserved.</p>
+          <p>&copy; {new Date().getFullYear()} Chowdeshwari Catering. All rights reserved.</p>
         </div>
       </div>
     </footer>

@@ -40,8 +40,16 @@ export default function AboutPage() {
       description: "Energy Sector Partner"
     },
     {
+      name: "Standard Chartered Bank",
+      description: "Banking Partner"
+    },
+    {
+      name: "Acuity",
+      description: "Analytics Partner"
+    },
+    {
       name: "And Many More",
-      description: "Growing list of satisfied corporate clients"
+      description: "We also serve software companies"
     }
   ];
 
@@ -142,14 +150,14 @@ export default function AboutPage() {
               <div className="relative w-48 h-48 mx-auto mb-6">
                 <Image
                   src={swapnaImage}
-                  alt="."
+                  alt="Swapna"
                   fill
                   className="object-cover rounded-full border-4 border-secondary"
                 />
               </div>
-              <h3 className="text-xl font-bold text-gray-800 mb-2">Chief</h3>
+              <h3 className="text-xl font-bold text-gray-800 mb-2">Swapna</h3>
               <p className="text-gray-600 font-medium mb-1">Proprietor</p>
-              <p className="text-secondary">+91 9999999999</p>
+              <p className="text-secondary">+91 6364831829</p>
             </motion.div>
 
             <motion.div
@@ -162,14 +170,14 @@ export default function AboutPage() {
               <div className="relative w-48 h-48 mx-auto mb-6">
                 <Image
                   src={jayanthImage}
-                  alt="."
+                  alt="Jayanth Shetty"
                   fill
                   className="object-cover rounded-full border-4 border-secondary"
                 />
               </div>
-              <h3 className="text-xl font-bold text-gray-800 mb-2">Chief</h3>
-              <p className="text-gray-600 font-medium mb-1">Treasurer</p>
-              <p className="text-secondary">+91 9999999999</p>
+              <h3 className="text-xl font-bold text-gray-800 mb-2">Jayanth Shetty</h3>
+              <p className="text-gray-600 font-medium mb-1">Marketing Manager</p>
+              <p className="text-secondary">+91 6360049746</p>
             </motion.div>
 
             <motion.div
@@ -182,14 +190,14 @@ export default function AboutPage() {
               <div className="relative w-48 h-48 mx-auto mb-6">
                 <Image
                   src={jayannaImage}
-                  alt="."
+                  alt="Jayanna"
                   fill
                   className="object-cover rounded-full border-4 border-secondary"
                 />
               </div>
-              <h3 className="text-xl font-bold text-gray-800 mb-2">Chief</h3>
-              <p className="text-gray-600 font-medium mb-1">Chief</p>
-              <p className="text-secondary">+91 9999999999</p>
+              <h3 className="text-xl font-bold text-gray-800 mb-2">Jayanna</h3>
+              <p className="text-gray-600 font-medium mb-1">Chief Operating Officer</p>
+              <p className="text-secondary">+91 9845653286</p>
             </motion.div>
           </div>
         </div>
@@ -232,7 +240,7 @@ export default function AboutPage() {
             >
               <h2 className="text-3xl font-bold mb-6">Our Heritage</h2>
               <p className="text-gray-600 mb-4">
-                Founded by Master Chef Antoine Laurent, Urban-Eats Catering began as a small family business
+                Founded by Master Chef Antoine Laurent, Chowdeshwari Catering began as a small family business
                 with a passion for creating extraordinary dining experiences.
               </p>
               <p className="text-gray-600">

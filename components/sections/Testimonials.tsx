@@ -16,7 +16,7 @@ export const testimonials = [
     role: 'Corporate Event Manager',
     image: 'https://images.unsplash.com/photo-1472099645785-5658abf4ff4e',
     blurDataURL: 'data:image/jpeg;base64,...',
-    quote: 'Professional, punctual, and absolutely delicious. Urban-Eats Catering has been our go-to for all corporate events.'
+    quote: 'Professional, punctual, and absolutely delicious. Chowdeshwari Catering has been our go-to for all corporate events.'
   },
   {
     name: 'Emily Rodriguez',
