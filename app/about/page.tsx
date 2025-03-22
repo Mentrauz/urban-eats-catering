@@ -5,8 +5,14 @@ import Image from 'next/image';
 import swapnaImage from './images/swapna.jpg';
 import jayanthImage from './images/jayanth.jpg';
 import jayannaImage from './images/jayanna.jpg';
+import { useState } from 'react';
+import { Dialog } from '@headlessui/react';
+import { AnimatePresence } from 'framer-motion';
 
 export default function AboutPage() {
+  const [isGalleryOpen, setIsGalleryOpen] = useState(false);
+  const [selectedPartner, setSelectedPartner] = useState(null);
+
   const timeline = [
     {
       year: "2021",
@@ -52,6 +58,24 @@ export default function AboutPage() {
       description: "We also serve software companies"
     }
   ];
+
+  // Gallery images for Standard Chartered Bank
+  const partnerGalleries = {
+    "Standard Chartered Bank": [
+      "/images/gallery/standardchartered-1.jpg",
+      "/images/gallery/standardchartered-2.jpg",
+      "/images/gallery/standardchartered-3.jpg",
+      "/images/gallery/standardchartered-4.jpg",
+      "/images/gallery/standardchartered-5.jpg",
+    ]
+  };
+
+  const openGallery = (partnerName) => {
+    if (partnerGalleries[partnerName]) {
+      setSelectedPartner(partnerName);
+      setIsGalleryOpen(true);
+    }
+  };
 
   return (
     <div className="pt-24">
@@ -219,10 +243,16 @@ export default function AboutPage() {
                 initial={{ opacity: 0, y: 20 }}
                 animate={{ opacity: 1, y: 0 }}
                 transition={{ delay: index * 0.1 }}
-                className="bg-gray-50 p-8 rounded-lg text-center hover:shadow-md transition-shadow"
+                className={`bg-gray-50 p-8 rounded-lg text-center hover:shadow-md transition-shadow ${
+                  partnerGalleries[vendor.name] ? 'cursor-pointer hover:bg-gray-100' : ''
+                }`}
+                onClick={() => openGallery(vendor.name)}
               >
                 <h3 className="text-xl font-semibold text-gray-800 mb-2">{vendor.name}</h3>
                 <p className="text-gray-600">{vendor.description}</p>
+                {partnerGalleries[vendor.name] && (
+                  <p className="text-secondary mt-3 text-sm">Click to view catering gallery</p>
+                )}
               </motion.div>
             ))}
           </div>
@@ -316,6 +346,73 @@ export default function AboutPage() {
           </div>
         </div>
       </section>
+
+      {/* Gallery Modal */}
+      <AnimatePresence>
+        {isGalleryOpen && selectedPartner && (
+          <Dialog
+            static
+            open={isGalleryOpen}
+            onClose={() => setIsGalleryOpen(false)}
+            className="relative z-50"
+          >
+            <motion.div
+              initial={{ opacity: 0 }}
+              animate={{ opacity: 1 }}
+              exit={{ opacity: 0 }}
+              className="fixed inset-0 bg-black/70"
+              aria-hidden="true"
+            />
+            
+            <div className="fixed inset-0 flex items-center justify-center p-4">
+              <Dialog.Panel>
+                <motion.div
+                  initial={{ opacity: 0, scale: 0.95 }}
+                  animate={{ opacity: 1, scale: 1 }}
+                  exit={{ opacity: 0, scale: 0.95 }}
+                  className="bg-white rounded-xl p-6 max-w-4xl w-full max-h-[90vh] overflow-y-auto"
+                >
+                  <div className="flex justify-between items-center mb-6">
+                    <Dialog.Title className="text-2xl font-bold text-gray-800">
+                      {selectedPartner} Catering Gallery
+                    </Dialog.Title>
+                    <button
+                      onClick={() => setIsGalleryOpen(false)}
+                      className="text-gray-500 hover:text-gray-700"
+                    >
+                      <svg xmlns="http://www.w3.org/2000/svg" className="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                        <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M6 18L18 6M6 6l12 12" />
+                      </svg>
+                    </button>
+                  </div>
+                  
+                  <div className="grid grid-cols-1 md:grid-cols-2 gap-4">
+                    {partnerGalleries[selectedPartner].map((image, index) => (
+                      <div key={index} className="relative h-64 rounded-lg overflow-hidden">
+                        <Image
+                          src={image}
+                          alt={`${selectedPartner} catering event ${index + 1}`}
+                          fill
+                          className="object-cover"
+                        />
+                      </div>
+                    ))}
+                  </div>
+                  
+                  <div className="mt-6 text-center">
+                    <button
+                      onClick={() => setIsGalleryOpen(false)}
+                      className="px-6 py-2 bg-secondary text-white rounded-full hover:bg-secondary/90 transition-colors"
+                    >
+                      Close Gallery
+                    </button>
+                  </div>
+                </motion.div>
+              </Dialog.Panel>
+            </div>
+          </Dialog>
+        )}
+      </AnimatePresence>
     </div>
   );
 }
