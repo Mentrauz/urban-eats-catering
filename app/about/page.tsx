@@ -172,12 +172,12 @@ export default function AboutPage() {
               className="text-center"
             >
               <div className="relative w-48 h-48 mx-auto mb-6">
-                {/* <Image
-                  src={swapnaImage}
+                <Image
+                  // src={swapnaImage}
                   alt="Swapna"
                   fill
                   className="object-cover rounded-full border-4 border-secondary"
-                /> */}
+                />
               </div>
               <h3 className="text-xl font-bold text-gray-800 mb-2">Owner</h3>
               <p className="text-gray-600 font-medium mb-1">Proprietor</p>
@@ -192,12 +192,12 @@ export default function AboutPage() {
               className="text-center"
             >
               <div className="relative w-48 h-48 mx-auto mb-6">
-                {/* <Image
-                  src={jayanthImage}
+                <Image
+                  // src={jayanthImage}
                   alt="Jayanth Shetty"
                   fill
                   className="object-cover rounded-full border-4 border-secondary"
-                /> */}
+                />
               </div>
               <h3 className="text-xl font-bold text-gray-800 mb-2">Owner</h3>
               <p className="text-gray-600 font-medium mb-1">Managing director</p>
@@ -212,12 +212,12 @@ export default function AboutPage() {
               className="text-center"
             >
               <div className="relative w-48 h-48 mx-auto mb-6">
-                {/* <Image
-                  src={jayannaImage}
+                <Image
+                  // src={jayannaImage}
                   alt="Jayanna"
                   fill
                   className="object-cover rounded-full border-4 border-secondary"
-                /> */}
+                />
               </div>
               <h3 className="text-xl font-bold text-gray-800 mb-2">Owner</h3>
               <p className="text-gray-600 font-medium mb-1">Chief Operating Officer</p>
