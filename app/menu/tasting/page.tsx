@@ -58,11 +58,11 @@ export default function TastingSession() {
             transition={{ duration: 0.6 }}
             className="flex justify-center gap-8 flex-wrap"
           >
-            <a href="tel:+919876543210" className="flex items-center gap-3 bg-white px-6 py-3 rounded-full shadow-lg hover:shadow-xl transition-shadow">
+            <a href="tel:+911234567890" className="flex items-center gap-3 bg-white px-6 py-3 rounded-full shadow-lg hover:shadow-xl transition-shadow">
               <FaPhone className="text-amber-600" />
               <span className="font-semibold">+91 98765 43210</span>
             </a>
-            <a href="https://wa.me/919876543210" className="flex items-center gap-3 bg-white px-6 py-3 rounded-full shadow-lg hover:shadow-xl transition-shadow">
+            <a href="https://wa.me/911234567890" className="flex items-center gap-3 bg-white px-6 py-3 rounded-full shadow-lg hover:shadow-xl transition-shadow">
               <FaWhatsapp className="text-green-600" />
               <span className="font-semibold">WhatsApp Us</span>
             </a>
@@ -116,7 +116,7 @@ export default function TastingSession() {
               Minimum booking for 4 persons required.
             </p>
             <motion.a
-              href="https://wa.me/919876543210?text=Hi,%20I%20would%20like%20to%20book%20a%20tasting%20session"
+              href="https://wa.me/911234567890?text=Hi,%20I%20would%20like%20to%20book%20a%20tasting%20session"
               target="_blank"
               rel="noopener noreferrer"
               whileHover={{ scale: 1.05 }}

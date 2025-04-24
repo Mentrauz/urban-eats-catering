@@ -230,7 +230,7 @@ export default function CorporateMenu() {
             Contact us today to discuss your corporate catering needs.
           </motion.p>
           <motion.a
-            href="https://wa.me/9876543210"
+            href="https://wa.me/1234567890"
             target="_blank"
             rel="noopener noreferrer"
             initial={{ opacity: 0, y: 20 }}
@@ -239,7 +239,7 @@ export default function CorporateMenu() {
             className="bg-white text-secondary px-8 py-3 rounded-full font-semibold hover:bg-gray-100 transition-colors inline-flex items-center"
           >
             Contact Us
-            <span className="ml-2">(9876543210)</span>
+            <span className="ml-2">(1234567890)</span>
           </motion.a>
         </div>
       </section>

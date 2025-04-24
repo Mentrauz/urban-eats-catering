@@ -28,7 +28,7 @@ export default function Footer() {
             <ul className="space-y-2 text-sm">
               <li>5th cross Raghavendra layoutt</li>
               <li>Bangalore, Karnataka 560068</li>
-              <li>Tel: +91 9876543210</li>
+              <li>Tel: +91 1234567890</li>
               <li>Email: info@Urban Eats.com</li>
             </ul>
           </div>
