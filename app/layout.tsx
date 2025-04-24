@@ -17,7 +17,7 @@ const montserrat = Montserrat({
 });
 
 export const metadata = {
-  title: 'Chowdeshwari Catering | Exquisite Culinary Experiences',
+  title: 'Urban Eats Catering | Exquisite Culinary Experiences',
   description: 'Experience the finest luxury catering services for weddings, corporate events, and private celebrations.',
   icons: {
     icon: '/favicon.ico'

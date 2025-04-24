@@ -270,7 +270,7 @@ export default function AboutPage() {
             >
               <h2 className="text-3xl font-bold mb-6">Our Heritage</h2>
               <p className="text-gray-600 mb-4">
-                Founded by Master Chef Antoine Laurent, Chowdeshwari Catering began as a small family business
+                Founded by Master Chef Antoine Laurent, Urban Eats Catering began as a small family business
                 with a passion for creating extraordinary dining experiences.
               </p>
               <p className="text-gray-600">

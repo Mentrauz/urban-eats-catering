@@ -16,7 +16,7 @@ export const testimonials = [
     role: 'Corporate Event Manager',
     image: 'https://api.dicebear.com/6.x/initials/svg?seed=AK&backgroundColor=d1d4f9',
     blurDataURL: 'data:image/svg+xml;base64,...',
-    quote: 'Professional, punctual, and absolutely delicious. Chowdeshwari Catering has been our go-to for all corporate events.'
+    quote: 'Professional, punctual, and absolutely delicious. Urban Eats Catering has been our go-to for all corporate events.'
   },
   {
     name: 'Rajesh Shah',

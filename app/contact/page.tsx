@@ -124,7 +124,7 @@ export default function ContactPage() {
                     <Mail className="w-6 h-6 text-secondary mr-4" />
                     <div>
                       <h3 className="font-semibold mb-1">Email</h3>
-                      <p className="text-gray-600">info@chowdeshwari.com</p>
+                      <p className="text-gray-600">info@Urban Eats.com</p>
                     </div>
                   </div>
                   <div className="flex items-start">
