@@ -2,9 +2,9 @@
 
 import { motion } from 'framer-motion';
 import Image from 'next/image';
-import swapnaImage from './images/swapna.jpg';
-import jayanthImage from './images/jayanth.jpg';
-import jayannaImage from './images/jayanna.jpg';
+// import swapnaImage from './images/swapna.jpg';
+// import jayanthImage from './images/jayanth.jpg';
+// import jayannaImage from './images/jayanna.jpg';
 import { useState } from 'react';
 import { Dialog } from '@headlessui/react';
 import { AnimatePresence } from 'framer-motion';
@@ -61,13 +61,13 @@ export default function AboutPage() {
 
   // Gallery images for Standard Chartered Bank
   const partnerGalleries = {
-    "Standard Chartered Bank": [
-      "/images/gallery/standardchartered-1.jpg",
-      "/images/gallery/standardchartered-2.jpg",
-      "/images/gallery/standardchartered-3.jpg",
-      "/images/gallery/standardchartered-4.jpg",
-      "/images/gallery/standardchartered-5.jpg",
-    ]
+    // "Standard Chartered Bank": [
+    //   "/images/gallery/standardchartered-1.jpg",
+    //   "/images/gallery/standardchartered-2.jpg",
+    //   "/images/gallery/standardchartered-3.jpg",
+    //   "/images/gallery/standardchartered-4.jpg",
+    //   "/images/gallery/standardchartered-5.jpg",
+    // ]
   };
 
   const openGallery = (partnerName) => {
@@ -172,16 +172,16 @@ export default function AboutPage() {
               className="text-center"
             >
               <div className="relative w-48 h-48 mx-auto mb-6">
-                <Image
+                {/* <Image
                   src={swapnaImage}
                   alt="Swapna"
                   fill
                   className="object-cover rounded-full border-4 border-secondary"
-                />
+                /> */}
               </div>
-              <h3 className="text-xl font-bold text-gray-800 mb-2">Swapna</h3>
+              <h3 className="text-xl font-bold text-gray-800 mb-2">Owner</h3>
               <p className="text-gray-600 font-medium mb-1">Proprietor</p>
-              <p className="text-secondary">+91 6364831829</p>
+              <p className="text-secondary">+91 1234567890</p>
             </motion.div>
 
             <motion.div
@@ -192,16 +192,16 @@ export default function AboutPage() {
               className="text-center"
             >
               <div className="relative w-48 h-48 mx-auto mb-6">
-                <Image
+                {/* <Image
                   src={jayanthImage}
                   alt="Jayanth Shetty"
                   fill
                   className="object-cover rounded-full border-4 border-secondary"
-                />
+                /> */}
               </div>
-              <h3 className="text-xl font-bold text-gray-800 mb-2">Jayanth Shetty</h3>
+              <h3 className="text-xl font-bold text-gray-800 mb-2">Owner</h3>
               <p className="text-gray-600 font-medium mb-1">Managing director</p>
-              <p className="text-secondary">+91 6360049746</p>
+              <p className="text-secondary">+91 1234567890</p>
             </motion.div>
 
             <motion.div
@@ -212,16 +212,16 @@ export default function AboutPage() {
               className="text-center"
             >
               <div className="relative w-48 h-48 mx-auto mb-6">
-                <Image
+                {/* <Image
                   src={jayannaImage}
                   alt="Jayanna"
                   fill
                   className="object-cover rounded-full border-4 border-secondary"
-                />
+                /> */}
               </div>
-              <h3 className="text-xl font-bold text-gray-800 mb-2">Jayanna</h3>
+              <h3 className="text-xl font-bold text-gray-800 mb-2">Owner</h3>
               <p className="text-gray-600 font-medium mb-1">Chief Operating Officer</p>
-              <p className="text-secondary">+91 9845653286</p>
+              <p className="text-secondary">+91 1234567890</p>
             </motion.div>
           </div>
         </div>
