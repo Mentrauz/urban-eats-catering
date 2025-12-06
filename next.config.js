@@ -1,14 +1,18 @@
 /** @type {import('next').NextConfig} */
 const nextConfig = {
-  images: {
-    domains: ['images.unsplash.com'],
-  },
   output: 'standalone',
-  eslint: {
-    ignoreDuringBuilds: true,
+  // Allow unoptimized images but restrict to trusted domains via remotePatterns
+  images: {
+    unoptimized: true,
+    remotePatterns: [
+      {
+        protocol: 'https',
+        hostname: 'images.unsplash.com',
+      },
+    ],
   },
-  images: { unoptimized: true, domains: ['images.unsplash.com'] },
   typescript: {
+    // Keep build moving even if type errors exist
     ignoreBuildErrors: true,
   },
   reactStrictMode: false,
