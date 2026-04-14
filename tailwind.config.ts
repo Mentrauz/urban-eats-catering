@@ -14,6 +14,7 @@ const config: Config = {
         accent: 'hsl(var(--accent))',
         background: 'hsl(var(--background))',
         foreground: 'hsl(var(--foreground))',
+        border: 'hsl(var(--border))',
       },
       fontFamily: {
         playfair: ['var(--font-playfair)'],

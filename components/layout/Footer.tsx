@@ -1,5 +1,5 @@
 import Link from 'next/link';
-import { Instagram, Facebook, Twitter } from 'lucide-react';
+import { FaInstagram, FaFacebook, FaXTwitter } from 'react-icons/fa6';
 
 export default function Footer() {
   return (
@@ -37,13 +37,13 @@ export default function Footer() {
             <h4 className="text-lg font-semibold mb-4">Follow Us</h4>
             <div className="flex space-x-4">
               <a href="#" className="hover:text-secondary transition-colors">
-                <Instagram size={20} />
+                <FaInstagram size={20} />
               </a>
               <a href="#" className="hover:text-secondary transition-colors">
-                <Facebook size={20} />
+                <FaFacebook size={20} />
               </a>
               <a href="#" className="hover:text-secondary transition-colors">
-                <Twitter size={20} />
+                <FaXTwitter size={20} />
               </a>
             </div>
           </div>
